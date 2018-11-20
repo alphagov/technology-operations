@@ -2,6 +2,9 @@
 applications:
 - name: technology-operations
   memory: 64M
-  path: ./build 
+  path: ./build
   buildpack: staticfile_buildpack
-  instances: 2 
+  name: gds-tech-docs
+  memory: 64M
+  path: ./redirect
+  buildpack: staticfile_buildpack
